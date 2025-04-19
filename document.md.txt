@@ -1,4 +1,4 @@
-# 📘 User Management System – Documentation
+# 📘 User Management App – Documentation
 
 1. Setup & Run Instructions
 
@@ -8,19 +8,19 @@
 - Spring Boot 3.x
 
 ### Steps
-git clone https://github.com/vishalini-dev/User Management App 
-cd user-management
+git clone https://github.com/Vishalini-Dev/User-Management-App
+cd User-Management-App
 ./mvnw spring-boot: run
 
 2. API Endpoints
 ------------------------------------------------
 Method |   Endpoint     |    Description
 ------------------------------------------------
-GET	/users	          Get all users
-GET	/users/{id}	  Get user by ID
-POST	/users/add	  Create a new user
-PUT	/users/update	  Update existing user
-DELETE	/users/{id}	  Delete user
+GET      	/users	          Get all users
+GET	      /users/{id}	      Get user by ID
+POST	    /users/add	      Create a new user
+PUT	      /users/update	    Update existing user
+DELETE	   /users/{id}	    Delete user
 ------------------------------------------------
 
 3. Request & Response Format
@@ -46,12 +46,12 @@ Response JSON:
 
 4. Validation Rules
 ---------------------------------------------------------
-Field   |        Rule	              |      Example
+Field   |            Rule	               |    Example
 ---------------------------------------------------------
-fName	 Required, Not Blank	        "Rishalini"
-lName	 Required, Not Blank	        "Shalini"
-emailId	 Required, Valid Email Format   "test@mail.com"
-phoneNo	 10-digit, number only	        "9876543210"
+fName	      Required, Not Blank	           "Rishalini"
+lName	      Required, Not Blank	           "Shalini"
+emailId	    Required, Valid Email Format   "test@mail.com"
+phoneNo	    10-digit, number only	         "9525252552"
 ---------------------------------------------------------
 
 5. Swagger Integration
