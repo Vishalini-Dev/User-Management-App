@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management App</title>
+    <style>
+        h1{
+            color: white;
+            background-color: rgb(61, 142, 196);
+            margin: 0;
+            padding: 10px;
+        }
+        button{
+            color: white;
+            background-color: rgb(61, 142, 196);
+            padding: 10px;
+            border:none;
+            border-radius: 5px;
+        }
+        table{
+            margin-top: 30px;
+            border-collapse: collapse;
+            
+        }
+    </style>
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+    <h1>User Management App</h1>
+    <h2 align="center">Users List</h2>
+    <a href="addUser.html"><button>Add User</button></a>
+    <table border="2px" align="center">
+      <thead>
+        <tr>
+          <th width="50px">Sno</th>
+          <th width="200px">User First Name</th>
+          <th width="200px">User Last Name</th>
+          <th width="250px">User Email Id</th>
+          <th width="200px">User Phone No</th>
+          <th width="350px">Actions</th>
+        </tr>
+      </thead>
+      <tbody id="userTableBody"></tbody>
+    </table>
+    <script type="text/javascript">
+        window.onload=function(){
+            showUsers();
+        };
+        
+
+    </script>
+</body>
+</html>

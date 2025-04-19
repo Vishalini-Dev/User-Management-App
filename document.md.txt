@@ -1,0 +1,74 @@
+# 📘 User Management System – Documentation
+
+1. Setup & Run Instructions
+
+### Requirements
+- Java 17+
+- Maven 3.8+
+- Spring Boot 3.x
+
+### Steps
+git clone https://github.com/vishalini-dev/User Management App 
+cd user-management
+./mvnw spring-boot: run
+
+2. API Endpoints
+------------------------------------------------
+Method |   Endpoint     |    Description
+------------------------------------------------
+GET	/users	          Get all users
+GET	/users/{id}	  Get user by ID
+POST	/users/add	  Create a new user
+PUT	/users/update	  Update existing user
+DELETE	/users/{id}	  Delete user
+------------------------------------------------
+
+3. Request & Response Format
+
+i)Create User – POST /users/add
+
+Request JSON:
+{
+  "fName": "Vishalini",
+  "lName": "M",
+  "emailId": "vishalini@example.com",
+  "phoneNo": "14141452565"
+}
+
+Response JSON:
+{
+  "sno": 1,
+  "fName": "Vishalini",
+  "lName": "M",
+  "emailId": "vishalini@example.com",
+  "phoneNo": "14141452565"
+}
+
+4. Validation Rules
+---------------------------------------------------------
+Field   |        Rule	              |      Example
+---------------------------------------------------------
+fName	 Required, Not Blank	        "Rishalini"
+lName	 Required, Not Blank	        "Shalini"
+emailId	 Required, Valid Email Format   "test@mail.com"
+phoneNo	 10-digit, number only	        "9876543210"
+---------------------------------------------------------
+
+5. Swagger Integration
+
+Maven Dependency:
+
+<dependency>
+    <groupId>org.springdoc</groupId>
+    <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+    <version>2.2.0</version>
+</dependency>
+
+Link:
+http://localhost:8080/swagger-ui/index.html
+
+
+
+
+
+

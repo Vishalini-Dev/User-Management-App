@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Update User</title>
+  <style>
+    form {
+      margin-left: 40%;
+      margin-top: 100px;
+      width: 300px;
+      border: 4px solid black;
+      padding: 20px;
+    }
+    label, input {
+      display: block;
+      margin: 10px 0 5px 0;
+      width: 100%;
+    }
+    button {
+      width: 100%;
+      background-color: rgb(241, 229, 9);
+      color: white;
+      height: 40px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <form onsubmit="updateUser(event)">
+    <h2 align="center">Update User</h2>
+    <input type="hidden" id="sno" />
+    <label>First Name</label>
+    <input type="text" id="fName" required />
+    <label>Last Name</label>
+    <input type="text" id="lName" required />
+    <label>Email</label>
+    <input type="email" id="emailId" required />
+    <label>Phone Number</label>
+    <input type="tel" id="phoneNo" pattern="[0-9]{10}" maxlength="10" required  title="Phone number must be exactly 10 digits" />
+    <button type="submit">Update</button>
+  </form>
+  <script src="update.js" defer></script>
+</body>
+</html>
+
